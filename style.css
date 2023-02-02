@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+ background-color: #383838;
+}
+.aling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-flow: column;
+}
+
+.form{
+    margin: 12px 0;
+    position: relative;
+}
+
+.form input{
+    padding: 8px 10px;
+    background-color: transparent;
+    font-size: 18px;
+    border: #acacac solid 2px ;
+    border-radius: 2px;
+    padding: 10px;
+    color: #eee;
+    transition: 0.15s all ease;
+}
+
+.form input::placeholder{
+    color: transparent;
+}
+
+.form input:focus{
+    border-color: #eee;
+}
+
+.form input:focus + .form-label,
+.form input:not(:placeholder-shown) + .form-label{
+    transform: translate(5px, -22px);
+    background-color: #383838;
+    color: #eee;
+    font-size: 14px;
+}
+
+
+
+
+.form .form-label{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    position: 0 10px;
+    margin: 5px;
+    font-size: 18px;
+    color: #acacac;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: rebeccapurple;
+}
+
+a :link a:visited{
+    color: rgb(169, 21, 228);
+}
+
+a:hover{
+    color: rgb(169, 21, 228);
+}
+
+.btn a:hover{
+    background-color: rgba(238, 238, 238, 0.151);
+    padding: 5px 10px;
+    border: rgba(238, 238, 238, 0.692) solid 2px;
+
+}
